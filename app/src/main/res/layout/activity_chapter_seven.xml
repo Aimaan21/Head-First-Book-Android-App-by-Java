@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChapterSeven">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/cheez_background"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:text="Chapter Seven:Support Libraries(v7 appCompat Library) and app bar"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="27dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20sp"/>
+    <Button
+        android:id="@+id/buttonCheezAppLaunch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:text="Launch"
+        android:background="@color/colorPrimaryDark"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="600dp"
+        android:onClick="onClickLaunch"/>
+</RelativeLayout>

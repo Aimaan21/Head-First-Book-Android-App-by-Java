@@ -1,0 +1,49 @@
+<resources>
+    <string name="app_name">Head First Android App</string>
+    <string name="start">Let"'"s Start!</string>
+    <string name="note_chapter_two">"[" Note":" Source code at ChapterTwo Activity and ChapterTwoHelperClass "]" </string>
+    <string name="note_chapter_three">"[" Note":" Source code at ChapterThree and Explicit Intent Activity "]" </string>
+    <string name="note_chapter_four">"[" Note":" Source code at ChapterFour,ActivityLifeCycle and StopWatchAppAndActivityLifeCycle Activity "]" </string>
+    <string name="action_create_order">Create Order</string>
+    <string name="home_tab">Home</string>
+    <string name="pizza_tab">Pizza</string>
+    <string name="pasta_tab">Pasta</string>
+
+    <string-array name="beer_colors">
+        <item>amber</item>
+        <item>brown</item>
+        <item>dark brown</item>
+        <item>light</item>
+    </string-array>
+
+    <string-array name="starbuck_option_list">
+        <item>Drink</item>
+        <item>Food</item>
+        <item>Stores</item>
+    </string-array>
+
+    <string-array name="starbuck_drink_category">
+        <item>Espresso</item>
+        <item>latte</item>
+        <item>Cappuccino</item>
+        <item>Hot coffe</item>
+    </string-array>
+
+    <string-array name="cheez_pizza">
+        <item>Four season</item>
+        <item>Cheese Delight</item>
+        <item>Bolognus</item>
+        <item>Alfredo</item>
+    </string-array>
+
+    <string-array name="cheez_pasta">
+        <item>Chicken Pasta</item>
+        <item>Beef Pasta</item>
+        <item>Alfresco Pasta</item>
+        <item>SMG Pasta</item>
+    </string-array>
+    <string name="implicit_intent_title">Share Here</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StarBuckFoodCategory">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary"/>
+    <ImageView
+        android:id="@+id/starBuckFoodLogo"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/starbuck_food_background"
+        android:layout_marginTop="-370dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textViewStarBuckFoodOptions"
+        android:text="Option"
+        android:textSize="30dp"
+        android:textStyle="bold"
+        android:textColor="@color/colorWhite"
+        android:layout_marginTop="360sp"
+        android:layout_marginLeft="10sp"/>
+    <ListView
+        android:id="@+id/listViewStarBuckFoodMenuOption"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="400sp"
+        />
+
+
+</RelativeLayout>

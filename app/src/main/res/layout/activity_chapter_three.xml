@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChapterThree">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/chapter_background"/>
+
+    <TextView
+        android:id="@+id/chapterThreeLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Chapter Three:Multiple Activity,
+Explicit Intent,Implicit Intent,Passing Data"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="130dp"
+        android:textAlignment="center"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="25sp"
+        />
+    <EditText
+        android:id="@+id/editTextMessage"
+        android:layout_width="370dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/chapterThreeLabel"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+        android:background="@color/colorAccent"/>
+    <Button
+        android:id="@+id/buttonExplcitIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/editTextMessage"
+        android:layout_centerHorizontal="true"
+        android:text="Explicit Intent"
+        android:background="@color/colorPrimary"
+        android:layout_marginTop="30dp"
+        android:onClick="onClickExplicitIntent"/>
+    <Button
+        android:id="@+id/buttonImplicitIntent"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/buttonExplcitIntent"
+        android:layout_centerHorizontal="true"
+        android:text="Implicit Intent"
+        android:background="@color/colorAccent"
+        android:layout_marginTop="30dp"
+        android:onClick="onClickImplicitIntent"/>
+    <TextView
+        android:id="@+id/textNoteCgapterThree"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_below="@id/buttonImplicitIntent"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        android:text="@string/note_chapter_three"
+        android:textColor="@color/colorRed"/>
+
+</RelativeLayout>

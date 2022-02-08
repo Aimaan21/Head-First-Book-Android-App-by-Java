@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ChapterEightWorkOutList"
+    android:background="@drawable/gym_workout_list_background">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/WorkOutListToolBar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:titleTextColor="@color/colorWhite"
+        app:title="Workout List"
+        />
+
+    <fragment
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:name="com.example.headfirstandroidapp.ChapterEightFragmentWorkoutList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/workout_list_frag"
+        android:layout_marginTop="70dp"/>
+
+</RelativeLayout>

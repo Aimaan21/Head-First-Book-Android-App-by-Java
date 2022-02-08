@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StopWatchAppAndAcitivityLifeCycle">
+   <ImageView
+       android:layout_width="match_parent"
+       android:layout_height="match_parent"
+       android:background="@drawable/chapter_background"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="22sp"
+        android:text="How StopWatch app maintaing Activity Life Cycle"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:layout_marginTop="115sp"
+        android:textColor="@color/colorDeepRed"/>
+    <TextView
+        android:id="@+id/onCreate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="190sp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="19sp"
+        android:text=" onCreate( ) : When the app is launched"
+        />
+    <TextView
+        android:id="@+id/onStart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onCreate"
+        android:layout_marginTop="15sp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="19sp"
+        android:text=" onStart( ) : When the activity is about to start"
+        />
+    <TextView
+        android:id="@+id/onResume"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onStart"
+        android:layout_marginTop="15sp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="19sp"
+        android:text=" onResume( ) : When the activity is visible to user and user is interacting with the activity"/>
+    <TextView
+        android:id="@+id/onPause"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onResume"
+        android:layout_marginTop="15sp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="19sp"
+        android:text=" onPause( ) : When another activity come over that activity but that activity is still visible (partially) but user can't interact with that activity"/>
+  <TextView
+    android:id="@+id/onStop"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/onPause"
+    android:layout_marginTop="15sp"
+    android:textColor="@color/colorPrimary"
+    android:textSize="19sp"
+    android:text=" onStop( ) :When another activity totally covers up the current activity and the current activity is totally invisible to user"/>
+    <TextView
+        android:id="@+id/partial"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/onStop"
+        android:textColor="@color/colorPrimary"
+        android:textSize="19sp"
+        android:layout_centerHorizontal="true"
+        android:textAlignment="center"
+        android:text=" (partially cover up: onPause( ) )"/>
+    <TextView
+        android:id="@+id/full"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/partial"
+        android:textColor="@color/colorPrimary"
+        android:textSize="19sp"
+        android:layout_centerHorizontal="true"
+        android:text="(Fully cover up: onPause( )+ onStop( ) )"/>
+    <TextView
+        android:id="@+id/onDestroy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/full"
+        android:layout_marginTop="15sp"
+        android:textColor="@color/colorPrimary"
+        android:textSize="19sp"
+        android:text=" onDestroy( ) :When we press back button of the mobile,the activity is destroyd and this method gets called"/>
+    <TextView
+        android:id="@+id/textNoteChapterFour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_below="@id/onDestroy"
+        android:layout_centerHorizontal="true"
+        android:text="@string/note_chapter_four"
+        android:textColor="@color/colorRed"/>
+
+</RelativeLayout>
